@@ -11,12 +11,12 @@ public class L83 {
         ListNode node = new ListNode(2,node1);
         ListNode head = new ListNode(1,node);
 
-        Solution solution = new Solution();
+        Solution1 solution = new Solution1();
         solution.deleteDuplicates(head);
     }
 }
 
-class Solution {
+class Solution1 {
     public ListNode deleteDuplicates(ListNode head) {
         if (head == null){
             return head;

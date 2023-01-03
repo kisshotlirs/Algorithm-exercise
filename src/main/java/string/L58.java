@@ -8,8 +8,8 @@ package string;
 public class L58 {
     public static void main(String[] args) {
         String s = "hello world ";
-        Solution solution = new Solution();
-        solution.lengthOfLastWord(s);
+        Solution2 solution = new Solution2();
+        solution.longestPalindrome(s);
     }
 }
 
