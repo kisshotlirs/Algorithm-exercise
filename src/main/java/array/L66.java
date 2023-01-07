@@ -9,12 +9,12 @@ public class L66 {
 
     public static void main(String[] args) {
         int[] a={1,2,3};
-        Solution solution = new Solution();
+        Solution66 solution = new Solution66();
         solution.plusOne(a);
     }
 }
 
-class Solution {
+class Solution66 {
     public int[] plusOne(int[] digits) {
 
         int len=digits.length;
