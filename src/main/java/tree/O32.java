@@ -1,5 +1,9 @@
 package tree;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * @author mojo
  * @description: 从上到下打印二叉树
@@ -13,21 +17,27 @@ public class O32 {
 }
 
 class SolutionO32 {
-    int[] res = null;
-    int i = 1;
     public int[] levelOrder(TreeNode root) {
-        res[0] = root.val;
-        return res;
-    }
-
-    public void printTree(TreeNode l,TreeNode r){
-        if (l!=null){
-            res[i++] = l.val;
+        if (root==null){
+            return new int[0];
         }
-        if (r!=null){
-            res[i++] = r.val;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        ArrayList<Integer> list = new ArrayList<>();
+        while (!queue.isEmpty()){
+            TreeNode node = queue.poll();
+            list.add(node.val);
+            if (node.left!=null){
+                queue.add(node.left);
+            }
+            if (node.right!=null){
+                queue.add(node.right);
+            }
         }
-        printTree(l.left,l.right);
-        printTree(r.left,r.right);
+        int[] ans = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            ans[i] = list.get(i);
+        }
+        return ans;
     }
 }
