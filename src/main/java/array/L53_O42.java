@@ -2,7 +2,7 @@ package array;
 
 /**
  * @author mojo
- * @description: 连续子数组的最大和
+ * @description: 连续子数组的最大和 动态规划
  * @date 2023/1/27 0027 16:44
  */
 public class L53_O42 {
