@@ -1,6 +1,8 @@
 package tree;
 
 import java.util.Stack;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @author mojo
@@ -11,10 +13,13 @@ public class O33 {
     public static void main(String[] args) {
         int[] num = {1,3,2,6,5};
         System.out.println(new SolutionO33().verifyPostorder(num));
+
+        ReentrantLock lock = new ReentrantLock(true);
     }
 }
 
 class SolutionO33 {
+
     public boolean verifyPostorder(int[] postorder) {
         Stack<Integer> stack = new Stack<>();
         int root = Integer.MAX_VALUE;
