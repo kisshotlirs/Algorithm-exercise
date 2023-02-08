@@ -1,6 +1,4 @@
-package linkedList;
-
-import java.util.Arrays;
+package list;
 
 /**
  * @author mojo
