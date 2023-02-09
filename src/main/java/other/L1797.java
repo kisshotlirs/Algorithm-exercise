@@ -8,6 +8,11 @@ import java.util.HashMap;
  * @date 2023/2/9 0009 9:16
  */
 public class L1797 {
+    public static void main(String[] args) {
+        String n = "100";
+        n = n+50;
+        System.out.println(n);
+    }
 }
 
 class AuthenticationManager {
