@@ -6,6 +6,12 @@ package list;
  * @date 2023/1/18 0018 11:59
  */
 public class L21_O25 {
+    public static void main(String[] args) {
+        int i=10;
+        int j=i;
+        i++;
+        System.out.println(j);
+    }
 }
 
 class Solution21 {
