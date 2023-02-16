@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class O54 {
     public static void main(String[] args) {
-
+        System.out.println(new Count().sum());
     }
 }
 
@@ -31,5 +31,15 @@ class SolutionO54 {
         getNodeVal(node.left,list);
         list.add(node.val);
         getNodeVal(node.right,list);
+    }
+}
+
+class Count {
+    public int sum() {
+        int sum = 0;
+        for (int i = 0; i <= 100; i++) {
+            sum = sum+i;
+        }
+        return sum;
     }
 }
