@@ -1,7 +1,5 @@
 package tree;
 
-import list.ListNode;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
