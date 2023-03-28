@@ -1,5 +1,6 @@
 package string;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -11,7 +12,7 @@ import java.util.List;
  */
 public class O38 {
     public static void main(String[] args) {
-        System.out.println(new SolutionO38().permutation("abc"));
+        System.out.println(Arrays.toString(new SolutionO38().permutation("abc")));
     }
 }
 
