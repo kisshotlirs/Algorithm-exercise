@@ -1,7 +1,5 @@
 package string;
 
-import java.util.Arrays;
-
 /**
  * @author: zyl
  * @description: 反转字符串中的元音字母
@@ -16,10 +14,10 @@ public class L345 {
         char[] arr = s.toCharArray();
         int l = 0,r = arr.length-1;
         while (l<r){
-            while (l<arr.length && !isVowel(arr[l])){
+            while (l<arr.length && isNotVowel(arr[l])){
                 ++l;
             }
-            while (r>0 && !isVowel(arr[r])){
+            while (r>0 && isNotVowel(arr[r])){
                 --r;
             }
             if (l < r){
@@ -37,7 +35,7 @@ public class L345 {
         arr[r] = temp;
     }
 
-    private boolean isVowel(char c) {
-        return "aeiouAEIOU".indexOf(c) >= 0;
+    private boolean isNotVowel(char c) {
+        return "aeiouAEIOU".indexOf(c) < 0;
     }
 }
