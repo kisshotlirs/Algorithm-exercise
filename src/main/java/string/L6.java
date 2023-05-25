@@ -24,8 +24,15 @@ public class L6 {
         int i = 0,flag = -1;
         for (char c : s.toCharArray()) {
             list.get(i).append(c);
-
+            if (i==0 || i==numRows-1){
+                flag = -flag;
+            }
+            i = i+flag;
         }
-        return null;
+        StringBuilder res = new StringBuilder();
+        for (StringBuilder builder : list) {
+            res.append(builder);
+        }
+        return res.toString();
     }
 }
